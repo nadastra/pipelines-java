@@ -24,7 +24,7 @@ steps:
 - task: AzureWebApp@1
   displayName: Azure Web App Deploy
   inputs:
-    azureSubscription: 'Azure subscription 1'
+    azureSubscription: 'AzSub1DevOpsStartDemoRgSvcCon'
     appName: 'devopstarterdemo'
     appType: 'webAppLinux'
     package: '$(System.DefaultWorkingDirectory)/**/*.war'
