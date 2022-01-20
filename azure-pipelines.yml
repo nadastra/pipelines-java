@@ -21,3 +21,11 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+- task: AzureWebApp@1
+  displayName: Azure Web App Deploy
+  inputs:
+    azureSubscription: 'Azure subscription 1'
+    appName: 'devopstarterdemo'
+    appType: 'webAppLinux'
+    package: '$(System.DefaultWorkingDirectory)/**/*.war'
+
