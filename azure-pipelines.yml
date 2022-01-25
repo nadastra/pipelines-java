@@ -24,7 +24,7 @@ steps:
 - task: AzureWebApp@1
   displayName: Azure Web App Deploy
   inputs:
-    azureSubscription: 'Sandpit - Export Readiness'
+    azureSubscription: 'AzSandpitSubRgPkSvcConn'
     appName: 'app-ag-sandpit-devops-java-aueast-01'
     appType: 'webAppLinux'
     package: '$(System.DefaultWorkingDirectory)/**/*.war'
